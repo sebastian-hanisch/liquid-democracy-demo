@@ -55,7 +55,7 @@ PRESETS = {
 PRESET_HELP = {
     "Zufallsnetz, mittlere Fähigkeit 62 %": "Voreinstellung: 101 Wähler in einem Zufallsnetz, im Mittel 62 % Trefferquote; jeder delegiert an den fähigsten besseren Nachbarn. Die Direktwahl liegt schon bei 99,6 %, die Delegation darunter bei 97,6 %: ein Wähler trägt 37 Stimmen.",
     "Delegieren hilft": "Mittlere Fähigkeit 55 %: die Direktwahl liegt bei 88,2 %, die Delegation hebt die Mehrheit auf 93,3 % (+5,1 Punkte).",
-    "Nabenknoten sammeln Stimmen": "Im Netz mit Nabenknoten sammelt ein Wähler (Fähigkeit 89 %) 57 von 101 Stimmen: die Mehrheit liegt in 89,2 % richtig statt in 99,0 % bei Direktwahl (−9,8 Punkte).",
+    "Nabenknoten sammeln Stimmen": "Im Netz mit Nabenknoten sammelt ein Wähler (Fähigkeit 89 %) 57 von 101 Stimmen: die Mehrheit liegt in 89,2 % richtig statt in 99,0 % bei Direktwahl (−9,8 Punkte). Das ist ein besonders deutlicher Fall; im Mittel der Reihe sind es −1,8 Punkte und 28,5 Stimmen.",
     "Mindestabstand begrenzt den Schaden": "Dasselbe Netz, aber wer nur an Nachbarn delegiert, die mindestens zehn Punkte besser sind: das größte Gewicht sinkt von 57 auf 16, die Mehrheit liegt in 99,5 % richtig statt in 99,0 % bei Direktwahl (+0,6 Punkte).",
     "Ein Guru, fünf Stimmen": "Fünf Wähler kennen sich alle; vier haben 75 %, einer 78 %. Alle delegieren an den 78-Prozent-Wähler: die Mehrheit liegt nur noch in 78,0 % richtig statt in 90,3 % bei Direktwahl.",
     "Ein Guru, der hilft": "Vier Wähler mit 60 %, einer mit 90 %: alle delegieren an ihn, die Mehrheit liegt in 90,0 % richtig statt in 78,6 % bei Direktwahl.",

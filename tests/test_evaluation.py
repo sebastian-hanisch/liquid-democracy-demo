@@ -79,7 +79,7 @@ def test_handbeispiele_mit_exakten_werten():
     assert good.liquid == pytest.approx(0.9, abs=1e-12) and good.direct == pytest.approx(0.78624, abs=1e-12)
 
 
-def test_regel_zufall_verteilt_die_stimmen_breiter_als_best():
+def test_regel_zufall_hat_im_nabennetz_mit_seed_32_ein_kleineres_groesstes_gewicht():  # nur dieser Einzelfall, kein allgemeiner Befund
     best = analyse(Settings(network="hub", rule="best", seed=32))
     rnd = analyse(Settings(network="hub", rule="zufall", seed=32))
     assert rnd.conc["max"] < best.conc["max"]

@@ -133,7 +133,7 @@ def verdict_regime(rows):
     strong = [r for r in rows if r["mean"] == max(C.SERIES_MEANS)]
     hurt = [r for r in rows if gap(r) < 0]
     text = (f"Bei schwacher Direktwahl (mittlere Fähigkeit {min(C.SERIES_MEANS)} %) hebt die Delegation die Mehrheit in jedem Netz um {num(100 * min(map(gap, weak)), 1)} bis {num(100 * max(map(gap, weak)), 1)} Punkte. "
-            f"Bei starker Direktwahl ({max(C.SERIES_MEANS)} %, Direktwahl mindestens {pct(min(r['direct'] for r in strong))}) liegt sie in jedem Netz darunter (um höchstens {num(-100 * min(map(gap, strong)), 1)} Punkte).")
+            f"Bei starker Direktwahl ({max(C.SERIES_MEANS)} %, Direktwahl mindestens {pct(min(r['direct'] for r in strong))}) liegt sie im Mittel in jedem Netz darunter (um höchstens {num(-100 * min(map(gap, strong)), 1)} Punkte).")
     if hurt:
         worst = min(hurt, key=gap)
         text += f" Insgesamt schadet sie in {len(hurt)} von {len(rows)} Zeilen im Mittel, am stärksten im Netz „{C.NETWORK_SHORT[worst['network']]}“ bei mittlerer Fähigkeit {worst['mean']} % ({points(gap(worst))})."
